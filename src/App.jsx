@@ -62,12 +62,10 @@ function App() {
 
   return (
     <>
-      {/* HERO BANNER */}
       <header className="hero-banner">
         <div className="hero-content">
-          <div className="hero-icon">☕</div>
           <div className="hero-text">
-            <h1>Café Dev <span>— Gestão</span></h1>
+            <h1><span>Gestão</span></h1>
             <p>Aroma, sabor e organização em cada pedido.</p>
           </div>
         </div>
@@ -75,7 +73,7 @@ function App() {
 
       <main className="container">
         <div className="grid">
-          {/* NOVO CLIENTE */}
+          {/* CLIENTE */}
           <section className="card">
             <div className="card-header">
               <span className="card-header-icon">👥</span>
@@ -107,7 +105,7 @@ function App() {
             </form>
           </section>
 
-          {/* NOVO PEDIDO */}
+          {/* PEDIDO */}
           <section className="card">
             <div className="card-header">
               <span className="card-header-icon">🛍️</span>
@@ -161,7 +159,6 @@ function App() {
         {/* HISTÓRICO */}
         <section className="card table-section">
           <div className="card-header">
-            <span className="card-header-icon">☕</span>
             <h2>Histórico de Pedidos</h2>
             <span className="card-meta">
               {pedidos.length} {pedidos.length === 1 ? "pedido" : "pedidos"}
@@ -171,7 +168,7 @@ function App() {
           {pedidos.length === 0 ? (
             <div className="empty-state">
               <div className="empty-state-icon">☕</div>
-              <p>Nenhum pedido ainda. Comece lançando o primeiro!</p>
+              <p>Nenhum pedido ainda, lance o primeiro!</p>
             </div>
           ) : (
             <div className="table-wrapper">
